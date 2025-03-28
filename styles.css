@@ -6,25 +6,29 @@
 
 :root {
     --primary-color: #1E5AFA;
+    --secondary-color: #FAFAFA;
     --text-color: #333333;
-    --background-color: #1E5AFA;
+
+
 }
 
 body {
     font-family: 'Inter', sans-serif;
     color: var(--text-color);
-    background-color: var(--background-color);
+    background-color: white;
+    line-height: 1.6;
 }
 
-nav {
+.container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding: 1.5rem 5%;
+    width: 81%;
+    margin: 0 ;
+    padding: 0 ;
     position: fixed;
-    width: 100%;
-    background: var(--background-color);
 }
+
+
 
 .logo{
     position: absolute;
@@ -50,9 +54,30 @@ nav {
     color: var(--text-color);
 }
 
+.login-button , .signup-button {
+    padding: 1rem 2rem;
+    background: white;
+    color: #1E5AFA;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.hero-content {
+    width: 50%;
+    color: white;
+}
+
+
 .hero {
-    display: inline-block;
-    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
     justify-content: space-between;
     min-height: 100vh;
@@ -84,19 +109,6 @@ nav {
     margin-top: 2rem;
 }
 
-.login-button , .signup-button {
-    padding: 1rem 2rem;
-    background: white;
-    color: #1E5AFA;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 2rem;
-}
-
-.menu-btn {
-    display: none;
-}
 
 @media (max-width: 768px) {
     .nav-links {
@@ -113,12 +125,5 @@ nav {
         background-color: white;
     }
 
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .hero-content {
-        max-width: 100%;
-    }
 }
