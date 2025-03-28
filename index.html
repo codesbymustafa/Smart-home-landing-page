@@ -1,53 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <nav>
-        <div class="nav-container">
+        <div class="container nav-container">
 
-            <ul class="nav-links">
+
+            <ul class="nav-items">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            
-            <h2 class="logo">smartHome</h2>
-            
-            <div class="nav-right">
-                <button class="login-btn">Login</button>
-                <button class="signup-btn">Sign Up</button>
+
+            <a href="index.html" class="nav-logo">
+                <h3>smartHome</h3>
+            </a>
+
+            <div class="nav-signin-signup">
+                <a href="#">Login</a>
+                <a href="#" class="btn">SignUp</a>
             </div>
-            
-            <button class = "menu-btn">☰</button>
-            <button class = "close-btn">X</button>
-            
+
+            <button class="menu-btn">☰</button>
+            <button class="close-btn">X</button>
+
         </div>
+
     </nav>
-        
 
-    <main>
 
-        <section class="hero">
-    
-            <div class="hero-content">
-                <h1>Smart Home application</h1>
-                <p>Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.</p>
-            </div>
-    
-            <div class="hero-image">
+
+    <header>
+        <div class="container header-container">
+            <h1 class="header-title">
+                Smart Home
+                <br>
+                Application
+            </h1>
+
+            <p class="lead">Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call
+                mile. An pasture he himself believe ferrars besides cottage.</p>
+
+            <div class="header-image">
                 <img src="assets/hero-image.png" alt="Smart Home Device">
             </div>
+
+            <div class="cta">
+                <a href="www.apple.com" class="btn btn-primary" target="_blank">
+                    <div id="apple" class="logo">
+                        <img src="assets/white-apple-logo.png" alt="Apple Icon">
+                    </div>
+
+                    <span>
+                        <small>Download on the</small>
+                        <h4>App Store</h4>
+                    </span>
+                </a>
+
+                <a href="www.google.com" class="btn btn-primary" target="_blank">
+                    <div class="logo">
+                        <img src="assets/goggle-playstore.png" alt="Apple Icon">
+                    </div>
+
+                    <span>
+                        <small>GET IT ON</small>
+                        <h4>Google Play</h4>
+                    </span>
+                </a>
+
+            </div>
+
+            <div class="header-socials" style="background-color: black;">
+                <a href="facebook.com" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z"
+                            fill="currentColor" />
+                    </svg>
+                </a>
+                <a href="instagram.com" target="_blank">
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.10063 3.65177C5.97111 3.65177 4.25248 5.37044 4.25248 7.5C4.25248 9.62956 5.97111 11.3482 8.10063 11.3482C10.2302 11.3482 11.9488 9.62956 11.9488 7.5C11.9488 5.37044 10.2302 3.65177 8.10063 3.65177ZM8.10063 10.0011C6.72347 10.0011 5.59961 8.87718 5.59961 7.5C5.59961 6.12282 6.72347 4.99894 8.10063 4.99894C9.47779 4.99894 10.6016 6.12282 10.6016 7.5C10.6016 8.87718 9.47779 10.0011 8.10063 10.0011ZM12.1064 2.59731C11.6092 2.59731 11.2077 2.99883 11.2077 3.49604C11.2077 3.99326 11.6092 4.39478 12.1064 4.39478C12.6036 4.39478 13.0051 3.99513 13.0051 3.49604C13.0053 3.37798 12.9821 3.26105 12.937 3.15194C12.8919 3.04283 12.8257 2.9437 12.7422 2.86021C12.6587 2.77673 12.5596 2.71054 12.4505 2.66542C12.3414 2.62031 12.2245 2.59716 12.1064 2.59731ZM15.6018 7.5C15.6018 6.4643 15.6112 5.43798 15.553 4.40416C15.4949 3.20335 15.2209 2.13763 14.3429 1.25953C13.4629 0.379564 12.3991 0.107505 11.1983 0.049341C10.1626 -0.00882328 9.13631 0.000558085 8.10251 0.000558085C7.06682 0.000558085 6.04053 -0.00882328 5.00672 0.049341C3.80593 0.107505 2.74023 0.38144 1.86216 1.25953C0.982203 2.1395 0.710149 3.20335 0.651986 4.40416C0.593823 5.43986 0.603204 6.46618 0.603204 7.5C0.603204 8.53382 0.593823 9.56202 0.651986 10.5958C0.710149 11.7967 0.984079 12.8624 1.86216 13.7405C2.74211 14.6204 3.80593 14.8925 5.00672 14.9507C6.0424 15.0088 7.0687 14.9994 8.10251 14.9994C9.13819 14.9994 10.1645 15.0088 11.1983 14.9507C12.3991 14.8925 13.4648 14.6186 14.3429 13.7405C15.2228 12.8605 15.4949 11.7967 15.553 10.5958C15.6131 9.56202 15.6018 8.5357 15.6018 7.5ZM13.9507 11.9242C13.8138 12.2657 13.6487 12.5209 13.3841 12.7836C13.1196 13.0481 12.8663 13.2132 12.5248 13.3502C11.5379 13.7423 9.19447 13.6542 8.10063 13.6542C7.00679 13.6542 4.6615 13.7423 3.6746 13.3521C3.33312 13.2151 3.07796 13.05 2.81528 12.7854C2.55073 12.5209 2.38563 12.2676 2.24866 11.9261C1.8584 10.9373 1.94659 8.59386 1.94659 7.5C1.94659 6.40614 1.8584 4.0608 2.24866 3.07388C2.38563 2.7324 2.55073 2.47723 2.81528 2.21455C3.07983 1.95188 3.33312 1.78489 3.6746 1.64792C4.6615 1.25766 7.00679 1.34584 8.10063 1.34584C9.19447 1.34584 11.5398 1.25766 12.5267 1.64792C12.8681 1.78489 13.1233 1.95 13.386 2.21455C13.6505 2.47911 13.8156 2.7324 13.9526 3.07388C14.3429 4.0608 14.2547 6.40614 14.2547 7.5C14.2547 8.59386 14.3429 10.9373 13.9507 11.9242Z"
+                            fill="#FAFAFA" />
+                    </svg>
+
+                </a>
+                <a href="x.com" target="_blank">
+                    <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.6026 1.78181C16.9775 2.07471 16.2972 2.28551 15.5964 2.36761C16.3239 1.89816 16.8688 1.15652 17.1287 0.281814C16.446 0.722914 15.698 1.03222 14.9181 1.19601C14.5921 0.817523 14.1979 0.516 13.7599 0.310233C13.322 0.104466 12.8497 -0.00113561 12.3725 9.20947e-06C10.4418 9.20947e-06 8.88915 1.69971 8.88915 3.78551C8.88915 4.07841 8.92184 4.37131 8.97496 4.65311C6.08408 4.48891 3.50578 2.98891 1.79169 0.692316C1.47936 1.27171 1.31569 1.93143 1.3177 2.60282C1.3177 3.91643 1.93265 5.07471 2.8704 5.75592C2.31777 5.73229 1.77808 5.56731 1.29523 5.27441V5.32101C1.29523 7.16051 2.49244 8.68492 4.08804 9.03551C3.78845 9.12003 3.48026 9.16327 3.17073 9.16421C2.94395 9.16421 2.72943 9.1398 2.51287 9.10651C2.95417 10.6065 4.23923 11.696 5.76945 11.7315C4.57224 12.75 3.07266 13.3491 1.44437 13.3491C1.15222 13.3491 0.88254 13.338 0.602646 13.3025C2.14717 14.3787 3.97976 15 5.95332 15C12.3602 15 15.8661 9.23521 15.8661 4.23152C15.8661 4.06731 15.8661 3.90311 15.8559 3.73891C16.5341 3.19971 17.1287 2.53181 17.6026 1.78181Z"
+                            fill="#FAFAFA" />
+                    </svg>
+
+                </a>
+                <a href="linkedin.com" target="_blank">
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2.188 4.376C3.3964 4.376 4.376 3.3964 4.376 2.188C4.376 0.979601 3.3964 0 2.188 0C0.979601 0 0 0.979601 0 2.188C0 3.3964 0.979601 4.376 2.188 4.376Z"
+                            fill="#FAFAFA" />
+                        <path
+                            d="M6.44229 6.0334V18.1724H10.2113V12.1694C10.2113 10.5854 10.5093 9.0514 12.4733 9.0514C14.4103 9.0514 14.4343 10.8624 14.4343 12.2694V18.1734H18.2053V11.5164C18.2053 8.2464 17.5013 5.7334 13.6793 5.7334C11.8443 5.7334 10.6143 6.7404 10.1113 7.6934H10.0603V6.0334H6.44229ZM0.300293 6.0334H4.07529V18.1724H0.300293V6.0334Z"
+                            fill="#FAFAFA" />
+                    </svg>
+                </a>
+
+            </div>
+
+
+        </div>
+
+        <div class="header-decorator-1">
+            <img src="assets/decorator-1.png" alt="Header Decorator">
+        </div>
+
+        <div class="header-decorator-2">
+            <img src="assets/decorator 2.png" alt="Header Decorator">
+        </div>
+
+    </header>
+
+    <section id="about">
+        <h1 class="about-title">About Us</h1>
+        <div class="container">
+            <article class="about-article">
+                <div class="about-image">
+                    <img src="assets/about1.png" alt="About Image">
+                </div>
+                <div class="about-content">
+                    <h2 class="about-article-title">Smart Home's Smart Services</h2>
+                    <p>Ye am depending propriety sweetness distrusts belonging collected. Smiling mention he in thought
+                        equally musical. Wisdom new and valley answer. Contented it so is discourse recommend. Man its
+                        upon him call mile. An pasture he himself believe ferrars besides cottage.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            <article class="about-article">
+                <div class="about-content">
+                    <h2 class="about-article-title">Smart Home's Smart Services</h2>
+                    <p>Ye am depending propriety sweetness distrusts belonging collected. Smiling mention he in thought
+                        equally musical. Wisdom new and valley answer. Contented it so is discourse recommend. Man its
+                        upon him call mile. An pasture he himself believe ferrars besides cottage.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="about-image">
+                    <img src="assets/about2.png" alt="About Image">
+                </div>
+            </article>
+            <article class="about-article">
+                <div class="about-image">
+                    <img src="assets/about3.png" alt="About Image">
+                </div>
+                <div class="about-content">
+                    <h2 class="about-article-title">Smart Home's Smart Services</h2>
+                    <p>Ye am depending propriety sweetness distrusts belonging collected. Smiling mention he in thought
+                        equally musical. Wisdom new and valley answer. Contented it so is discourse recommend. Man its
+                        upon him call mile. An pasture he himself believe ferrars besides cottage.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="clients">
+        <h1 class="clients-title">Our Clients</h1>
+        <p class="lead">
+            Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture
+            he himself believe ferrars besides cottage.
+        </p>
+        <div class="container clients-container">
+            <div class="clients-logos">
+                <img src="assets/client1.png" alt="Client Logo">
+            </div>
+            <div class="clients-logos">
+                <img src="assets/client2.png" alt="Client Logo">
+            </div>
+            <div class="clients-logos">
+                <img src="assets/client3.png" alt="Client Logo">
+            </div>
+            <div class="clients-logos">
+                <img src="assets/client4.png" alt="Client Logo">
+            </div>
+            <div class="clients-logos">
+                <img src="assets/client5.png" alt="Client Logo">
+            </div>
+            <div class="clients-logos">
+                <img src="assets/client6.png" alt="Client Logo">
+            </div>
+            <div class="clients-logos">
+                <img src="assets/client7.png" alt="Client Logo">
+            </div>
+            <div class="clients-logos">
+                <img src="assets/client8.png" alt="Client Logo">
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h1>Testimonials</h1>
+        <p class="lead">
+            Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture
+            he himself believe ferrars besides cottage.
+        </p>
+        <div class="container testimonial-container">
+            <article class="testimonial">
+
+                <p>
+                    our company, we do ongoing research with our target audience. This includes 30-45 minute phone
+                    interviews. It was difficult to conduct the interview, really listen, and ask good follow up
+                    questions
+                </p>
+
+                <div class="testimonial-client">
+                    <div class="avatar">
+                        <img src="assets/avatar1.png">
+                    </div>
+                    <div class="testimonial-work">
+                        <p><b>Cham</b></p>
+                        <small>Product Designer</small>
+                    </div>
+                </div>
+
+            </article>
+            <article class="testimonial">
+
+                <p>
+                    We meet new clients and more often than not establish long-term business relationships, all through
+                    Guru. The flexibility in how projects can be structured
+                </p>
+
+                <div class="testimonial-client">
+                    <div class="avatar">
+                        <img src="assets/avatar2.png">
+                    </div>
+                    <div class="testimonial-work">
+                        <p><b>Scopic Software</b></p>
+                        <small>Custom IT Solutions Firm</small>
+                    </div>
+                </div>
+
+            </article>
+            <article class="testimonial">
+
+                <p>
+                    It is easy to communicate with clients through their message system and their SafePay feature
+                    ensures that all funds are secured prior to any work being done.
+                </p>
+
+                <div class="testimonial-client">
+                    <div class="avatar">
+                        <img src="assets/avatar3.png">
+                    </div>
+                    <div class="testimonial-work">
+                        <p><b>Russell Lee</b></p>
+                        <small>Writer</small>
+                    </div>
+                </div>
+
+            </article>
+            <article class="testimonial">
+
+                <p>
+                    At SOLACE Engineers, we provide engineering solutions and other services on various freelancing
+                    platforms. Among them all, Guru is the best and our first choice to invite clients.
+                </p>
+
+                <div class="testimonial-client">
+                    <div class="avatar">
+                        <img src="assets/avatar4.png">
+                    </div>
+                    <div class="testimonial-work">
+                        <p><b>Solace Engineers Inc</b></p>
+                        <small>Engineering Firm</small>
+                    </div>
+                </div>
+
+            </article>
+        </div>
+
+
+    </section>
+
+    <section id="faqs">
+
+        <h1>FAQs</h1>
+        <div class="container faq-container">
+            <article class="faq open">
+                <span class="faq-icon">-</span>
+
+                <div class="faq-qestion-answer">
+                    <h4 class="faq-question">What is Smart Home?</h4>
+
+                    <p class="faq-answer">Smart Home is a home automation system that allows you to control your home's
+                        lighting, appliances, security, and more from your smartphone or tablet.</p>
+                </div>
+            </article>
+            <article class="faq">
+                <span class="faq-icon">+</span>
+
+                <div class="faq-qestion-answer">
+                    <h4 class="faq-question">How does Smart Home work?</h4>
+
+                    <p class="faq-answer">Smart Home works by connecting your devices to a central hub, which then
+                        allows you to control them remotely using an app on your smartphone or tablet.</p>
+                </div>
+            </article>
+            
+
+            <article class="faq">
+                <span class="faq-icon">+</span>
+
+                <div class="faq-qestion-answer">
+                    <h4 class="faq-question">What are the benefits of Smart Home?</h4>
+
+                    <p class="faq-answer">Some of the benefits of Smart Home include increased security, energy savings,
+                        convenience, and peace of mind.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <span class="faq-icon">+</span>
+                <div class="faq-qestion-answer">
+                    <h4 class="faq-question">How can I get started with Smart Home?</h4>
+
+                    <p class="faq-answer">You can get started with Smart Home by purchasing a Smart Home starter kit,
+                        which typically includes a central hub and a few devices to get you started.</p>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <section id="downloadApp">
+
+        <div class="container downloadApp-container">
+            <div class="downloadApp-content">
+                <h1 class="downloadApp-title">Download<br> App</h1>
+                
+                <p>
+                    Wisdom new and valley answer. Contented it so is discourse recommend. Man its upon him call mile. An pasture he himself believe ferrars besides cottage.
+                </p>
+
+                <div class="cta">
+                    <a href="www.apple.com" class="btn btn-primary" target="_blank">
+                        <div id="apple" class="logo">
+                            <img src="assets/white-apple-logo.png" alt="Apple Icon">
+                        </div>
     
-        </section>
+                        <span>
+                            <small>Download on the</small>
+                            <h4>App Store</h4>
+                        </span>
+                    </a>
     
-    </main>
+                    <a href="www.google.com" class="btn btn-primary" target="_blank">
+                        <div class="logo">
+                            <img src="assets/goggle-playstore.png" alt="Apple Icon">
+                        </div>
+    
+                        <span>
+                            <small>GET IT ON</small>
+                            <h4>Google Play</h4>
+                        </span>
+                    </a>
+    
+                </div>
+            </div>
+
+            <div class="downloadApp-image">
+                <img src="assets/Download app.png" alt="Download App Image">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="subscribe">
+        <div class="container subscribe-container">
+            <div class="subscribe-text">
+                <h2>
+                    Subscribe to get updated
+                </h2>
+                <p>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque .
+                </p>
+            </div>
+
+            <a href="#" class="btn subscribe-btn">Subscribe</a>
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="footer-container container">
+            <div class="footer-1">
+                <div >
+                    <a href="index.html" class="footer-logo">
+                        <h3>smartHome</h3>
+                    </a>
+                </div>
+                <p>
+                    Automate your entire healthcare hiring, onboarding and compliance with a true technology platform.
+                </p>
+
+                <div class="footer-subscribe">
+
+                    <input type="email" placeholder="Email Email" required>
+                    <button type="submit">Register</button>
+
+                </div>
+
+
+            </div>
+
+            <div class="footer-2">
+                <h4>CATEGORIES</h4>
+                <ul class="cate-links">
+                    <li><a href="#">Product Management</a></li>
+                    <li><a href="#">Design / Creatives</a></li>
+                    <li><a href="#">Education & Training</a></li>
+                    <li><a href="#">UI/UX Designers</a></li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-3">
+                <h4>ABOUT</h4>
+                <ul class="abt-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Partnerships</a></li>
+                    <li><a href="#">Finance Experts</a></li>
+                    <li><a href="#">Project Management</a></li>
+                    <li><a href="#">Product Manager</a></li>
+                    <li><a href="#">The Team</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-4">
+                <h4>Follow Us</h4>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                </ul>
+
+            </div>
+            
+
+        </div>
+
+        <div class="copyright">
+            <small> Copyright © 2021 all rights reserved smartHome </small>
+        </div>
+    </footer>
+
 
     <script src="script.js"></script>
 </body>
+
 </html>
